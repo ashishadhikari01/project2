@@ -1,0 +1,236 @@
+/* * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.nav-container{
+    border: 2px solid rgba(133, 150, 149, 0.753);
+    background-color:rgba(133, 150, 149, 0.753);
+    box-shadow: 1px 3px 5px rgb(202, 202, 202);
+    color:white;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    height:90px;
+}
+.item1 {
+    padding:7px 0 7px 20px;
+    font-weight: 700;
+    font-size:2.5rem;
+    color:white;
+}
+.item2{
+    padding:22px 30px 7px 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+    
+}
+.item2 a {
+    color:white;
+    text-decoration: none;
+    color:rgb(255, 217, 0);
+    border:3px solid rgb(255, 217, 0);
+    border-radius:7px;
+    padding:5px;
+}
+.item2 a:hover{
+    background-color: rgba(83, 144, 99, 0.879);
+}
+
+.message{
+    font-size:4.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:40px auto 10px auto;
+    width:80%;
+    color:rgba(8, 193, 165, 0.916);
+    text-shadow:1px 2px 4px rgb(91, 91, 91);
+    /* border:1px solid red; 
+    padding:auto 2px;
+}
+.message::first-letter{
+    font-family:'Courier New', Courier, monospace;
+    font-size:7.5rem;
+    color:rgb(8, 193, 165,0.916);
+    
+}
+.message-brief{
+  margin: 0px auto;
+  width:80%;
+  font-size:2.3rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+.specific-color {
+    color:rgb(8, 193, 165);
+    text-shadow: 0.5px 0.5px 0.5px rgb(8, 193, 165);
+}
+body {
+     border: 2px solid black; 
+}
+.main-container{
+    display:flex;
+    /* border: 10px solid black; 
+    height:400px;
+    width:100%;
+}
+.side-container {
+    display:block;
+        /* border:3px solid red; 
+        width: 45%;
+    height: 450px;
+        padding-left:30px;
+}
+.right-container {
+    border-bottom: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    opacity: 1.0;
+    /* flex-direction:right; 
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: crimson;
+    margin-top: 5px;
+}
+.slides {
+    width: 3200px;
+    animation-name: animate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides img {
+
+    width: 800px;
+    float: left;
+    height: 450px;
+}
+
+.lower-container {
+    border-top: 2px solid red;
+    /* position: relative; 
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding-top: 15px;
+    /* overflow: hidden; 
+}
+
+.icon {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
+
+}
+
+.icon:hover {
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.icon:hover i {
+    color: #fff;
+}
+
+.icon .fa-facebook-f {
+    color: #1a6ed8;
+}
+
+.fb:hover {
+    background: #1a6ed8;
+}
+
+.icon .fa-twitter {
+    color: #1da1f2;
+}
+
+.twt:hover {
+    background: #1da1f2;
+}
+
+.icon .fa-youtube {
+    color: #CD201F;
+}
+
+.you:hover {
+    background: #CD201F;
+}
+
+.icon .fa-instagram {
+    color: #E4405F;
+}
+
+.insta:hover {
+    background: #E4405F;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes animate {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    22% {
+        left: -800px;
+    }
+
+    42% {
+        left: -800px;
+    }
+
+    44% {
+        left: -1600px;
+    }
+
+    64% {
+        left: -1600px;
+    }
+
+    66% {
+        left: -2400px;
+    }
+
+    86% {
+        left: -2400px;
+    }
+
+    88% {
+        left: -3200px;
+    }
+
+    100% {
+        left: -3200px;
+    }
+}  
+ 
+
+

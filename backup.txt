@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create an account</title>
+    <link rel="stylesheet" href="css/signup.css"/>
+</head>
+<body>
+   <div class="form">
+    <div class="form-wrapper">
+    <h1 class="signup">Register</h1>
+    <div class="vertical-line"></div>
+
+    <div class="horizontal-line1"></div>
+    <div class="horizontal-line2"></div>
+    <div class="horizontal-line3"></div>
+
+     <div class="asBtn">
+        <button class="executive-btn">As an Executive</button>
+    </div>
+    <div class="asBtn">
+        <button class="leadingMember-btn">As a Leading Member</button>
+    </div>
+   <div class="asBtn">
+    <button class="member-btn">As a member</button>
+</div> 
+    <!-- <form>
+        <div class="element-child">
+        <div><label for="name">First Name</label></div>
+        <div><input type="text" for="firstname" required/></div>
+    </div>
+
+    <div class="element-child">
+        <div><label for="lastname">LastName</label></div>
+       <div><input type="text" for="lastname" required/></div>
+    </div>
+
+    <div class="element-child">
+        <div><label for="email">Email</label></div>
+        <div><input type="email" for="email" required/>  </div>
+    </div>
+
+    <div class="element-child">
+        <div><label>Date Of Birth</label></div>
+    <div><input type="date" for="date" required></div>
+    </div>
+
+    <div class="element-child">
+        <div><label>Phone</label></div>
+        <div><input type="phone" for="phone" required/></div>
+    </div>
+
+    <div class="element-child">
+        <div><label>Password</label></div>
+        <div><input type="password" for="password" required/></div>
+
+    </div>
+
+    <div class="policy">
+        <label><p>By clicking Create Now, you agree to our Terms, Privacy policy and Cookies policy. </p></label>
+    </div>
+    <div class="element-child">
+       <button class="createNow-btn">Create Now</button>
+    </div>
+
+    <div class="inqury-account">
+      <a href="./login.html" target="_self"><p>Already have an account?</p></a>
+    </div>
+    </form> -->
+</div>
+</div>
+</body>
+</html>
+
+css:
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+}
+.form {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    border:3px solid red;
+    background-color:rgb(207, 207, 207);
+}
+.form .form-wrapper {
+    /* display:block;
+    justify-content: flex-end; */
+    border:2px solid rgb(255, 0, 0); 
+    border-radius:10px;
+    width:450px;
+    height:70vh;
+    background-color:white;
+    box-shadow: 0 4px 11px  rgb(0, 0, 0);
+    /* overflow:auto; */
+}
+.signup{
+    font-size:3.6rem;
+    margin:10px auto 20px auto;
+    border-bottom: 2px solid silver;
+    padding-bottom:10px;
+    width:90%;
+}
+.vertical-line {
+    border-left:4px silver solid;
+    height:330px;
+    left:30%;
+    margin-top:15px;
+    position:absolute;
+    border-radius:30px;
+}
+.horizontal-line1 {
+    border-top:3px solid silver;
+    height:1px;
+    top:37%;
+    left:30%;
+    width:19px;
+    position:absolute;
+}
+.horizontal-line2 {
+    border-top:3px solid silver;
+    height:1px;
+    top:52.5%;
+    left:30%;
+    width:19px;
+    position:absolute;
+}
+.horizontal-line3 {
+    border-top:3px solid silver;
+    height:1px;
+    top:67.5%;
+    left:30%;
+    width:19px;
+    position:absolute;
+}
+.asBtn {
+   margin: 0 auto;
+   width:60%;
+   /* border:1px solid red; */
+}
+.executive-btn, .leadingMember-btn, .member-btn{
+     margin:35px auto 20px auto;
+     border:1px solid black;
+     height:55px;
+     width:85%;
+     border-radius:15px;
+     background-color:#808080cd;
+     color:#ffffff;
+     cursor:pointer;
+     border:none;
+     font-weight: bold;
+}
+.form-wrapper form {
+    font-family:cursive;
+    font-size:1.7rem;
+    margin:40px auto 10px auto;
+    width:85%;
+    overflow:auto;
+    height:50vh;
+}
+form .element-child {
+    margin:13px 0;
+}
+form input{
+    margin:3px auto 0 auto;
+    width:95%;
+    border: 2px solid silver;
+    padding:10px;
+    border-radius:10px;
+}
+form .policy {
+    margin:auto;
+    width:95%;
+    font-size:1.4rem;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.createNow-btn {
+    margin: 0 auto 0 auto;
+    width:95%;
+    border-radius:10px;
+    padding:10px;
+    border-color:silver;
+    cursor:pointer;
+    font-size:1.7rem;
+    font-family:cursive;
+    border-color:silver;
+    background-color:rgba(202, 202, 202, 0.735);
+}
+.createNow-btn:hover{
+    background-color:rgb(202, 202, 202);
+    border-color:rgb(202, 202, 202);
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
+}
+.createNow-btn:active {
+    font-weight: bold;
+}
+.inqury-account {
+     margin:15px auto 0px auto;
+     width:95%;
+}
+.inqury-account a {
+    color:red;
+    font-size:1.4rem;
+}
+a:active {
+    color:blue;
+}

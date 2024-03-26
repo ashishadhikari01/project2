@@ -1,0 +1,111 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+}
+.nav-container {
+    display:flex;
+    height:80px;
+    justify-content: space-between;
+    background-color: rgb(148, 147, 147);
+    color:white;
+    padding:10px 0 10px 20px;
+    font-weight:500;
+}
+.nav-container> li{
+    list-style-type: none;
+    font-size: 2.0rem;
+}
+.nav-container>li>a{
+    text-decoration: none;
+    color:white;
+}
+
+.form {
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    height:100vh;
+    width:100%;
+    /* border:2px solid; */
+    background-color:rgb(207, 207, 207);
+}
+.form-wrapper {
+    border-radius:10px;
+    width:450px;
+    height:70%;
+    border:2px solid rgb(109, 109, 109);
+    background-color:white;
+    box-shadow:0px 4px 11px rgb(0, 0, 0);
+    overflow-y: auto;
+}
+.login {
+    font-size:1.8rem;
+    margin:10px auto 20px auto;
+    border-bottom: 2px solid silver;
+    padding-bottom:10px;
+    width:90%;
+}
+.form-wrapper form {
+    margin:40px auto 10px auto;
+    width:85%;
+}
+.element-child {
+    margin:15px 0;
+}
+.element-child label {
+    font-size:1.7rem;
+    font-family:cursive;
+}
+.element-child input {
+    margin:3px auto 0 auto;
+    width:95%;
+    border: 2px solid silver;
+    padding:10px;
+    border-radius:10px;
+}
+button {
+    margin:20px auto;
+    width:95%;
+    border-radius:10px;
+    padding:10px;
+    cursor:pointer;
+    font-family:cursive;
+    font-size:1.7rem;
+    border-color:silver;
+    background-color:rgba(202, 202, 202, 0.735);
+}
+button:hover {
+    background-color:rgb(202, 202, 202);
+    border-color:rgb(202, 202, 202);
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
+}
+button:active {
+    font-weight:bold;
+}
+.inqury-account{
+    margin:-15px auto;
+    width:85%;
+}
+.inqury-account a {
+    font-family:cursive;
+    color:red;
+    font-size:1.4rem;
+}
+.inqury-password {
+    margin:17px auto;
+    width:85%;
+}
+.inqury-password a {
+    color:red;
+    font-family:cursive;
+    font-size:1.4rem;
+}
+a:active {
+    color:blue;
+}
+
+

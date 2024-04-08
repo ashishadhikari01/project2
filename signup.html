@@ -20,85 +20,99 @@
     <p class="alert"></p>
     <form>
         <div class="element-child">
-        <div><label name="firstname">First Name</label></div>
-        <div><input type="text" name="field-firstname"/></div>
+        <div><label>First Name</label></div>
+        <div><input type="text" name="firstname"/></div>
+        <P class="err-msg" id="firstname-err"></P>
     </div>
 
     <div class="element-child">
-        <div><label name="lastname">LastName</label></div>
-       <div><input type="text" name="field-lastname"/></div>
+        <div><label >LastName</label></div>
+       <div><input type="text" name="lastname"/></div>
+       <p class="err-msg" id="lastname-err"></p>
     </div>
 
     <div class="element-child">
-        <div><label for="email">Email</label></div>
-        <div><input type="email" for="email"/>  </div>
+        <div><label>Email</label></div>
+        <div><input type="email" name="email"/></div>
+        <p class="err-msg" id="email-err"></p>
     </div>
 
     <div class="element-child">
         <div><label>Date Of Birth</label></div>
-    <div><input type="date" for="date" ></div>
+    <div><input type="date" name="dob"></div>
+    <p class="err-msg" id="dob-err"></p>
     </div>
 
     <div class="element-child">
         <div><label>Gender</label></div>
-        <div><select name="gender">
-            <option value="Male">Male</option>
-            <option value="female">Female</option>
-            <option value="rather-not-to-say">Rather not to say</option>
-        </select></div>
+        <div class="gender-wrapper">
+            <label><input type="radio" value="male" name="gender">Male</label>
+            <label><input type="radio" value="female" name="gender">Female</label>
+            <label><input type="radio" value="not-to-say" name="gender">Not to say </label>
+        </div>
+        <p class="err-msg" id="gender-err"></p>
     </div>
 
     <div class="element-child">
         <div><label>Phone</label></div>
-        <div><input type="phone" for="phone" /></div>
+        <div><input type="phone" name="phone" /></div>
+        <p class="err-msg" id="phone-err"></p>
     </div>
 
     <div class="element-child">
         <div><label>Current Semester</label></div>
         <div><select name="current-sem">
-            <option value="first">First</option>
-            <option value="second">Second</option>
-            <option value="third">Third</option>
-            <option value="fourth">Fourth</option>
-            <option value="Fifth">Fifth</option>
-            <option value="Sixth">Sixth</option>
-            <option value="Seventh">Seventh</option>
-            <option value="Eight">Eight</option>
-        </select>  </div>
+            <option value="01">Select</option>
+            <option value="02">First</option>
+            <option value="03">Second</option>
+            <option value="04">Third</option>
+            <option value="05">Fourth</option>
+            <option value="06">Fifth</option>
+            <option value="07">Sixth</option>
+            <option value="08">Seventh</option>
+            <option value="09">Eight</option>
+        </select></div>
+        <p class="err-msg" id="currentsem-err"></p>
     </div>
 
     <div class="element-child">
         <div><label>Faculty</label></div>
         <div><input type="text" name="faculty"></div>
+        <p class="err-msg" id="faculty-err"></p>
     </div>
 
     <div>
         <div><label>Register as</label></div>
-        <div><select class="register-as">
+        <div><select name="register-as">
+            <option value="select">Select</option>
             <option value="General Member">General Member</option>
             <option value="leading-member">Leading Member</option>
-            <!-- <option value="Executive">Executive</option> -->
         </select> </div>
+        <p class="err-msg" id="register-err"></p>
     </div>
      <!-- core questions region -->
     <div class="element-child ">
     <div><label class="core-qns1"></label></div>
     <div class="core-qns1Ans"></div>
+    <p class="err-msg" id="coreqns1-err"></p>
    </div>
 
    <div class="element-child">
     <div><label class="core-qns2"></label></div>
     <div class="core-qns2Ans"></div>
+    <p class="err-msg" id="coreqns2-err"></p>
    </div>
 
    <div class="element-child">
     <div><label class="core-qns3"></label></div>
     <div class="core-qns3Ans"></div>
+    <p class="err-msg" id="coreqns3-err"></p>
    </div>
 
    <div class="element-child">
     <div><label class="core-qns4"></label></div>
     <div class="core-qns4Ans"></div>
+    <p class="err-msg" id="coreqns4-err"></p>
 </div>
 
    <div class="element-child">
@@ -107,34 +121,40 @@
     <div><ul class="ul-qns5Ans">
     <button class="list-addbtn" type="button">Add</button>
     </ul></div>
+    <p class="err-msg" id="coreqns5-err"></p>
    </div>
    
    <div class="element-child">
   <div><label class="core-qns6"></label></div>
   <div class="core-qns6Ans"></div>
+  <p class="err-msg" id="coreqns6-err"></p>
    </div>
 
    <div class="element-child">
     <div><label class="core-qns7"></label></div>
     <div class="core-qns7Ans"></div>
+    <p class="err-msg" id="coreqns7-err"></p>
    </div>
 
    <div class="element-child">
     <div><label>Password</label></div>
-    <div><input type="password" for="password"/></div>
+    <div><input type="password" name="password"/></div>
+    <p class="err-msg" id="password-err"></p>
+    </div>
 
     <div class="element-child">
         <div><label>Confirm password</label></div>
         <div><input type="password" name="confirm-password"></div>
+        <p class="err-msg" id="confirmpassword-err"></p>
     </div>
 
-</div>
+
      
     <div class="policy">
         <label><p>By clicking Create Now, you agree to our Terms, Privacy policy and Cookies policy. </p></label>
     </div>
     <div class="element-child">
-       <a href="./dashboard.html" target="_blank"><button type="button" class="createNow-btn">Create Now</button></a>
+       <a href="./signupgetsubmitted.html" target="_blank"><button type="button" class="createNow-btn">Create Now</button></a>
     </div>
 
     
@@ -142,8 +162,8 @@
     <div class="inqury-account">
         <a href="./login.html" target="_self"><p>Already have an account?</p></a>
       </div>
-    <a href="./dashboard.html" target="_self">waytodashboard</a>
-    <a href="./landingpage.html" targe="_self">landing</a>
+    <!-- <a href="./dashboard.html" target="_self">waytodashboard</a>
+    <a href="./landingpage.html" targe="_self">landing</a> -->
     
 </div>
 </div>

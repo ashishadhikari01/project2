@@ -11,7 +11,7 @@ html {
     justify-content:center;
     align-items:center;
     height:100vh;
-    border:3px solid red;
+    /* border:3px solid red; */
     background-color:rgb(207, 207, 207);
 }
 form {
@@ -20,7 +20,7 @@ form {
 .form .form-wrapper {
     /* display:block;
     justify-content: flex-end; */
-    border:2px solid rgb(255, 0, 0); 
+    /* border:2px solid rgb(255, 0, 0);  */
     border-radius:10px;
     width:500px;
     height:75vh;
@@ -95,7 +95,7 @@ form {
 form .element-child {
     margin:13px 0;
 }
-form input,select {
+form input,select,.gender-wrapper{
     margin:3px auto 0 auto;
     width:95%;
     border: 2px solid silver;
@@ -153,4 +153,14 @@ a:active {
 }
 .list-addbtn:active {
     background-color: rgba(192, 192, 192, 0.493);
+}
+.gender-wrapper {
+    display:flex;
+    /* flex-wrap: wrap; */
+    margin:3px 20px 0 auto;
+    width:95%;
+}
+/* css for form validation starts here */
+.err-msg{
+    color:red;
 }

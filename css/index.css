@@ -230,7 +230,345 @@ a {
     100% {
         left: -3200px;
     }
-}  
- 
+} 
+*/ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.nav-container {
+    border: 2px solid rgba(133, 150, 149, 0.753);
+    background-color: rgba(133, 150, 149, 0.753);
+    box-shadow: 1px 3px 5px rgb(202, 202, 202);
+    color: white;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.item1 {
+    padding: 7px 0 7px 20px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.item2 {
+    padding: 22px 30px 7px 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+
+}
+
+.item2 a {
+    color: white;
+    text-decoration: none;
+    color: rgb(255, 217, 0);
+    border: 3px solid rgb(255, 217, 0);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.item2 a:hover {
+    background-color: rgba(83, 144, 99, 0.879);
+}
+
+.message {
+    font-size: 4.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 40px auto 10px auto;
+    width: 80%;
+    color: rgba(8, 193, 165, 0.916);
+    text-shadow: 1px 2px 4px rgb(91, 91, 91);
+    /* border:1px solid red; */
+    padding: auto 2px;
+} 
+
+.message::first-letter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 7.5rem;
+    color: rgb(8, 193, 165, 0.916);
+
+}
+
+.message-brief {
+    margin: 0px auto;
+    width: 80%;
+    font-size: 2.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.specific-color {
+    color: rgb(8, 193, 165);
+    text-shadow: 0.5px 0.5px 0.5px rgb(8, 193, 165);
+}
+
+body {
+    background-color:#ffffffcd;
+}
+/* #ffffffcd; */
+
+.main-container {
+    display: flex;
+    margin:25px auto 0px auto;
+    /* border: 1px solid black; */
+    height:470px;
+    width:95%;
+    column-gap: 5%;
+}
+
+.side-container {
+    display: block;
+    /* border:1px solid red; */
+    width: 45%;
+    height: 450px;
+    /* padding-left: 30px; */
+    margin:10px 10px 10px 10px;
+    background-color: whitesmoke;
+    box-shadow:0px 0px 5px 2px rgba(0, 0, 0, 0.355);
+    
+
+}
+.message-wrapper{
+/* border:1px solid rgb(0, 0, 0); */
+padding-top:45px;
+}
+
+.right-container {
+    /* border: 1px solid red; */
+    width:50%;
+    box-shadow:0px 0px 5px 2px rgba(0, 0, 0, 0.355);
+    /* border-bottom: hidden; */
+    margin:10px 10px 10px 10px;
+    background-color: whitesmoke;
+    /* border-radius: 10px; */
+    /* box-shadow:0px 0px 1.5px 1.5px black; */
+    /* background-color:black; */
+    /* opacity: 1.0; */
+    flex-direction:right;
+     /* width: 874px; */
+    height: 450px;
+    /* width:45%; */
+    /* width:890px; */
+    /* height:466px; */
+    /* overflow: hidden; */
+    /* box-shadow: crimson; */
+    /* margin-top: 5px; */
+}
+
+.slides {
+    border:1px solid rgb(255, 0, 0);
+    width:97.4%;
+    height:430px;
+    margin:10px;
+    /* height:440px;
+    margin-top:10px;
+   margin:10px auto auto auto; */
+/* margin-bottom:10px;  */
+    /* width:calc(50%-10px);
+    height:calc(450px-10px); */
+    /* margin:10px auto 10px auto; */
+    /* background-color: rgb(180, 180, 180); */
+    /* width: 3200px; */
+    /* animation-name: animate;
+   animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    overflow: hidden;   */
+}
+
+.slides img {
+    width: 800px;
+    float: left;
+    height: 450px;
+}
+
+.lower-container{
+    width:94%;
+    margin:10px auto 0 auto;
+    /* height:120px; */
+    /* border:1px solid red; */
+    /* background-color:grey; */
+}
+.lower-wrapper {
+    /* border-top: 2px solid red; */
+    /* position: relative; */
+    /* margin:30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height:50px; */
+    /* padding-top:50px; */
+    /* background-color: grey; */
+    /* padding-top:30px; */
+    /* border:1px solid red; */
+    /* overflow: hidden; */
+}
+.connected-us{
+    /* border:1px solid red; */
+    display:flex;
+
+}
+.connected-us label{
+    padding:3px;
+    border-bottom:1px solid green;
+    border-width:3px;
+    width:95%;
+    margin:10px auto 0 auto;
+    color:green;
+    font-size:25px;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(246, 242, 242, 0.819);
+    /* height:40px; */
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    margin-right: 10px;
+    background-color: #d8d6d6d4;
+    background-color: none;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
+}
+
+.icon:hover {
+    width: 100px;
+    cursor: pointer;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    color: #fff;
+    padding-top:8px;
+    color:white;
+}
+.icon-msg:hover{
+    padding-top:5px;
+}
+
+.icon:hover i {
+    color: #fff;
+}
+
+.icon .fa-facebook-f {
+    color: #1a6ed8;
+}
+
+.fb:hover {
+    background: #1a6ed8;
+}
+
+.icon .fa-twitter {
+    color: #1da1f2;
+}
+
+.twt:hover {
+    background: #1da1f2;
+}
+
+.icon .fa-youtube {
+    color: #CD201F;
+}
+
+.you:hover {
+    background: #CD201F;
+}
+
+.icon .fa-instagram {
+    color: #E4405F;
+}
+
+.insta:hover {
+    background: #E4405F;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes animate {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    22% {
+        left: -800px;
+    }
+
+    42% {
+        left: -800px;
+    }
+
+    44% {
+        left: -1600px;
+    }
+
+    64% {
+        left: -1600px;
+    }
+
+    66% {
+        left: -2400px;
+    }
+
+    86% {
+        left: -2400px;
+    }
+
+    88% {
+        left: -3200px;
+    }
+
+    100% {
+        left: -3200px;
+    }
+}
+/* Original CSS goes here */
+
+/* Media query for screens smaller than 768px (standard mobile devices) */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .side-container,
+    .right-container {
+        width: 100%; /* Take up full width on smaller screens */
+        padding: 20px; /* Add some padding for better spacing */
+    }
+
+    .slides img {
+        width: 100%; /* Make images responsive within their containers */
+        height: auto;
+    }
+
+    .lower-container {
+        flex-wrap: wrap; /* Allow icons to wrap onto multiple lines */
+        justify-content: center; /* Center icons horizontally */
+    }
+
+    .icon {
+        margin: 10px; /* Add some margin around each icon */
+    }
+}
 
 

@@ -23,7 +23,7 @@ form {
     /* border:2px solid rgb(255, 0, 0);  */
     border-radius:10px;
     width:500px;
-    height:75vh;
+    height:80vh;
     background-color:white;
     box-shadow: 0 4px 11px  rgb(0, 0, 0);
     /* overflow:auto; */
@@ -130,11 +130,12 @@ form .policy {
     font-weight: bold;
 }
 .inqury-account {
-     margin:25px auto 0px auto;
-     width:85%;
+     margin:15px auto 0px auto;
+     width:90%;
 }
 .inqury-account a {
-    color:red;
+    font-family: cursive;
+    color:green;
     font-size:1.4rem;
 }
 a:active {
@@ -161,6 +162,14 @@ a:active {
     width:95%;
 }
 /* css for form validation starts here */
-.err-msg{
+.err-msg,.alert{
     color:red;
+    font-size:18px;
+}
+.alert{
+    color:red;
+    font-family:cursive;
+    margin:auto;
+    width:50%;
+    font-size:18px;
 }

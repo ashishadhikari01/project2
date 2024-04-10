@@ -20,6 +20,12 @@ html{
     height:90px;
     border:none;
 }
+.nav-container img{
+    width:55px;
+    height:55px;
+    border-radius:55px;
+    border:2px solid whitesmoke;
+}
 .item1 {
     padding:7px 0 7px 20px;
     font-weight: 700;
@@ -106,6 +112,7 @@ margin-top:40px;
 .center-container {
     width:85%;
     background-color: rgba(119, 136, 153, 0.396);
+    font-family: cursive;
 }
 
 /* for status panel */
@@ -168,4 +175,92 @@ th,td{
 }
 .no{
     background-color:red;
+}
+
+
+
+/* overview css */
+.personal-info{
+    margin-top:5px;
+    width:99.8%;
+    border-bottom:2px solid black;
+    padding:10px;
+    background-color: white;
+    height:65px;
+}
+.personal-info-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.expand-btn{
+    border-radius:40px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    border:1px solid silver;
+    padding-top:3px;
+}
+.expand-btn:hover{
+    border:3px solid silver;
+}
+.expanded-area {
+    /* margin-top:0; */
+    height:270px; 
+    background-color: #f0f0f0;
+    /* border:1px solid rgb(255, 0, 0); */
+  }
+  .expanded {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease;  /*Smooth transition for height change */
+
+  }
+  .expanded-container {
+    display:block;
+    /* border:2px solid white; */
+  }
+  .expandedarea-items{
+    /* display:flex;
+    justify-content: space-between; */
+    border-bottom:1px solid silver;
+    margin-top:7px;
+  }
+  .expandedarea-items-item {
+    display: flex;
+    justify-content:space-between;
+    /* border:1px solid red; */
+    width:95%;
+    margin:auto;
+  }
+
+  /* css for profile picture starts here */
+  .profile-picture{
+    margin-top:5px;
+    width:99.8%;
+    border-bottom:2px solid black;
+    padding:10px;
+    background-color: white;
+}
+.profile-picture-wrapper{
+display:flex;
+justify-content: space-between;
+/* border:1px solid red; */
+}
+.profile-picture-wrapper h1{
+    padding-top:4px;
+}
+.profile-picture-wrapper input{
+    display:none;
+}
+.profile-picture-wrapper label {
+    border:1px solid silver;
+    border-radius:10px;
+     cursor:pointer;
+}
+.profile-picture-wrapper label:hover{
+    border:3px solid silver;
+}
+.profile-picture-wrapper label img{
+    margin-bottom:-2px;
+    background-color: none;
 }

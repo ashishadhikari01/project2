@@ -209,7 +209,7 @@ if(confirmPassword.value===""){
     confirmPassword.style.boxShadow="0px 0px 1.5px 1.5px rgba(255,0,0,0.5)"
 
 }
-else if(!Password.value===confirmPassword.value){
+else if(Password.value===!confirmPassword.value){
     confirmpasswordErr.textContent="confirm password must match with password"
     confirmPasswordStatus=false
     confirmPassword.style.boxShadow="0px 0px 1.5px 1.5px rgba(255,0,0,0.5)"

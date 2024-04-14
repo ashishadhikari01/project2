@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.personal-info{
+    margin-top:10px;
+    width:100%;
+    border-bottom:2px solid black;
+    padding:10px;
+    background-color: white;
+    height:65px;
+}
+.personal-info-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.expand-btn,.registeras-expand-btn{
+    border-radius:40px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    border:1px solid silver;
+    padding-top:3px;
+}
+.expand-btn:hover,.registeras-expand-btn:hover {
+    border:3px solid silver;
+}
+.expanded-container{
+    margin-top:5px;
+    /* height:300px; */
+      /* Set initial height to 0 */
+    background-color: #f0f0f0;
+    overflow:auto;
+    transition:height 0.3s ease-in-out;
+    padding-bottom:10px;
+}
+  .expand {
+    height:0px;
+    overflow:hidden;
+}
+  .expandedarea-items{
+    display:flex;
+    justify-content: space-between; 
+    margin:7px auto 3px auto;
+    border-bottom:2px solid silver;
+  }
+.expandedarea-items-item {
+    display: flex;
+    justify-content:space-between;
+    width:95%;
+    margin:auto;
+  } 
+
+  /* css for profile picture starts here */
+  .profile-picture{
+    margin-top:10px;
+    width:100%;
+    border-bottom:2px solid black;
+    padding:10px;
+    background-color: white;
+    height:65px;
+}
+.profile-picture-wrapper{
+display:flex;
+justify-content: space-between;
+/* border:1px solid red; */
+}
+.profile-picture-wrapper h1{
+    padding-top:4px;
+}
+.profile-picture-wrapper input{
+    display:none;
+}
+.profile-picture-wrapper label {
+    border:1px solid silver;
+    border-radius:10px;
+     cursor:pointer;
+}
+.profile-picture-wrapper label:hover{
+    border:3px solid silver;
+}
+.profile-picture-wrapper label img{
+    margin-bottom:-2px;
+    background-color: none;
+}
+
+/* register as */
+.register-as{
+    margin-top:10px;
+    width:100%;
+    border-bottom:2px solid black;
+    padding:10px;
+    background-color: white;
+    height:65px;
+}
+.register-as-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.register-as-expand{
+    margin-top:5px;
+    margin-bottom:5px;
+    /* padding-bottom:10px; */
+    /* height:0px; */
+    /* overflow:hidden; */
+    /* background-color:white; */
+    height:830px;
+    overflow:auto;
+    transition: height 0.5s ease-out;
+}
+.expand-one{
+    overflow:hidden;
+    height:0px;
+}
+.register-as-items{
+    display:flex;
+flex-wrap:wrap;
+   width:90%;
+   margin:0px auto 0 auto;
+   /* border:1px solid red; */
+   padding:15px 10px;
+   column-gap:80px;
+   row-gap:30px;
+}
+.register-as-item{
+    display:flex;
+    flex-direction: column;
+    width:450px;
+    height:380px;
+    border:3px solid black;
+    border-radius:16px;
+    filter:blur(1px);
+}
+.register-as-item img{
+    border-radius:14px;
+     /* border-bottom:5px solid silver; */
+    
+}
+ .register-as-item:hover{
+    filter:blur(0);
+   
+
+}
+/*.register-as-item:hover img,
+.register-as-item img:hover{
+    border-radius:14px;
+    border-bottom:2px solid rgb(0, 0, 0);
+} */
+/* .register-as-item img:hover{
+    border-radius:14px;
+    border-bottom:2px solid rgb(0, 0, 0);
+} */
+.register-as-item-upper{
+ width:100%;
+ height:80%;
+ /* background-color:yellow; */
+}
+.register-as-item-lower{
+    /* display:flex;
+    flex-direction:column; */
+    height:20%;
+    /* background-color: blue; */
+}
+.register-as-item-lower p {
+  /* border:1px solid red; */
+  font-size:25px;
+  text-shadow: 0px 0px 3px rgba(151, 121, 121, 0.819);
+    width:45%;
+    margin: 0 auto 0 auto;
+}
+.register-as-item-lower .apply-btn{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: flex-end;
+    margin:0px 10px 5px auto;
+}
+.apply-btn button{
+    width:100px;
+    height:35px;
+    background-color: green;
+    color:white;
+    border:1px solid white;
+    border-radius:7px;
+    cursor:pointer;
+}
+.apply-btn button:hover{
+    background-color:rgba(0, 128, 0, 0.698);
+    transition:background-color 0.3s ease-in; 
+}
+.form-expand{
+    /* height:500px;
+    background-color:yellow; */
+}

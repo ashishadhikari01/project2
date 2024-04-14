@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toogle</title>
+    
+    <style>
+.expand-container{
+    height:300px;
+    overflow:auto;
+    border:3px solid yellow;
+    background-color: red;
+    transition: height 0.3s ease-in-out;
+}
+.expand{
+    height:0;
+}
+.personal-info{
+    background-color: green;
+    height:50px;
+}
+.personal-information-wrapper{
+display:flex;
+justify-content: space-between;
+}
+
+    </style>
+</head>
+<body>
+    <div class="personal-info">
+        <div class="personal-information-wrapper">
+            <div>Personal information</div>
+            <div><button class="personal-btn">but</button></div>
+        </div>
+    </div>
+    <div class="expand-container"></div></div>
+    <script>
+        let personalBtn=document.querySelector(".personal-btn")
+        let expandContainer=document.querySelector(".expand-container")
+        personalBtn.addEventListener("click", function(){
+            expandContainer.classList.toggle("expand")
+        })
+    </script>
+</body>
+</html>
